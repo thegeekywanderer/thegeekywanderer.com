@@ -1,3 +1,9 @@
+# Mac
+**/.DS_Store
+
+# Astro
+.astro
+
 # Logs
 logs
 *.log

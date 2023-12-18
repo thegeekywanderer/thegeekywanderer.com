@@ -1,0 +1,139 @@
+html {
+	font-family: "Atkinson Hyperlegible", sans-serif;
+}
+.post {
+	max-width: 800px; /* Adjust the width to your preference */
+}
+
+.post p {
+	@apply text-lg leading-7;
+	font-size: 1.25em;
+}
+
+.post h2 {
+	@apply mb-2 mt-6 text-4xl text-neutral-100;
+}
+
+.post h3 {
+	@apply mt-4 text-xl text-neutral-100;
+}
+
+.post a {
+	@apply text-neutral-100 underline;
+}
+
+.post ul {
+	@apply list-disc;
+}
+
+.post blockquote {
+	@apply flex flex-row gap-2 py-2 before:block before:h-auto before:w-3 before:max-w-[3px] before:bg-orange-400 before:content-[''];
+}
+
+.post pre {
+	@apply rounded-xl p-4;
+}
+
+.post pre > code {
+	@apply bg-transparent;
+}
+
+.post code {
+	background-color: rgba(249, 115, 22, 0.2); /* Set your background color */
+	border-radius: 0.25rem;
+	padding: 0.25rem;
+}
+
+div.remark-highlight {
+	position: relative;
+}
+
+pre {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 2em;
+	background-color: rgba(0, 0, 0, 0.2); /* Translucent white background */
+	border: 1px solid var(--color-border-default); /* Subtle grey border */
+	border-radius: 8px;
+	line-height: 1.5;
+	overflow-x: auto;
+	font-size: 0.9rem;
+}
+
+/* Adapted from prismjs/plugins/line-numbers/prism-line-numbers.css */
+pre[class*="language-"].line-numbers {
+	padding-left: calc(2em + 3ch + 0.8em);
+	counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+	white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: 0;
+	top: 1.25em;
+	text-align: end;
+	background-color: rgba(0, 0, 0, 0.2); /* Translucent white background */
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.line-numbers-rows > span {
+	display: block;
+	counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+	content: counter(linenumber);
+	color: #999;
+	display: block;
+	padding-left: 2em;
+	padding-right: 0.8em;
+	text-align: right;
+}
+
+.line-numbers span.line-numbers-rows > span {
+	position: relative;
+}
+
+.line-numbers span.line-numbers-rows > span::after {
+	content: " ";
+	background: var(--color-border-default);
+	opacity: 0.3;
+	mix-blend-mode: var(--mix-blend-mode);
+	width: var(--highlight-width, 0);
+	position: absolute;
+	top: 0;
+	left: calc(-2em + 24px);
+}
+
+div.remark-highlight > button {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	border: 1px solid var(--color-border-default); /* Subtle grey border */
+	color: var(--color-fg-muted);
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 8px 12px 7px 12px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+div.remark-highlight > button > svg > path {
+	fill: var(--color-fg-muted);
+}
+
+div.remark-highlight > button:hover {
+	background-color: var(--color-border-muted);
+}
