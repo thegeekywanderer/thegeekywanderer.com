@@ -12,6 +12,11 @@ const projects: Project[] = [
 		link: "https://github.com/thegeekywanderer/athena",
 	},
 	{
+		title: "Fluxy - a gRPC rate limiter",
+		techs: ["go", "gRPC", "redis", "kubernetes"],
+		link: "https://github.com/thegeekywanderer/fluxy",
+	},
+	{
 		title: "RustCUE",
 		techs: ["Rust"],
 		link: "/",
