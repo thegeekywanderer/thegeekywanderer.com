@@ -16,7 +16,7 @@ const presentation: Presentation = {
 	title: "Hi, I’m Karan! ",
 	profile: "/profile.webp",
 	description:
-		"Salut! I'm *thegeekywanderer*, an Indian coding enthusiast who loves exploring both in code and on adventures. I work with *Go, Rust, and Python*, focusing on problem-solving and crafting systems. I'm always gathering knowledge to innovate in my own coding journey.",
+		"Salut! I'm *thegeekywanderer*, an Indian coding enthusiast who loves exploring both in code and on adventures. I work with *Go, Rust, and Python*, focusing on problem-solving while crafting systems and always gathering knowledge to innovate in my own coding journey.",
 	socials: [
 		{
 			label: "X",
